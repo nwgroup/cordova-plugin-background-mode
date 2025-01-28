@@ -71,7 +71,7 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <service android:name="de.appplant.cordova.plugin.background.ForegroundService" />
+            <service android:enabled="true" android:exported="false" android:foregroundServiceType="location" android:name="de.appplant.cordova.plugin.background.ForegroundService" />
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
